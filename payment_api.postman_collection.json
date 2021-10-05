@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "efddd7cd-aa01-4cd8-a32d-dbda9eac7dd6",
+		"name": "payment_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "credit_card_payment_json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ZrZ8GpV8UbJbIG4aChNmx2EHc8khsdKa2xjDP7INzPypp6Ic9kPXwaWAQ5gHRHnxJiO3otpUo64LaPPi",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"payment_method\": \"credit_card\",\n\"card_number\": \"79927398713\",\n\"expiration_date\":\"10-30\",\n\"cvv2\":\"784\",\n\"email\":\"mostafaelgebaly962@gmail.com\"\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Mostafa_Elgebaly_Payment_API/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Mostafa_Elgebaly_Payment_API",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "credit_card_payment_xml",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ZrZ8GpV8UbJbIG4aChNmx2EHc8khsdKa2xjDP7INzPypp6Ic9kPXwaWAQ5gHRHnxJiO3otpUo64LaPPi",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<root>\n   <card_number>4424424424442444</card_number>\n   <cvv2>784</cvv2>\n   <email>test@*gmail.com</email>\n   <expiration_date>10-30</expiration_date>\n   <payment_method>credit_card</payment_method>\n</root>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Mostafa_Elgebaly_Payment_API/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Mostafa_Elgebaly_Payment_API",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "phone_number_payment_json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ZrZ8GpV8UbJbIG4aChNmx2EHc8khsdKa2xjDP7INzPypp6Ic9kPXwaWAQ5gHRHnxJiO3otpUo64LaPPi",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"payment_method\": \"phone\",\n\"phone_number\": \"01145174551\"\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Mostafa_Elgebaly_Payment_API/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Mostafa_Elgebaly_Payment_API",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "phone_number_payment_xml",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ZrZ8GpV8UbJbIG4aChNmx2EHc8khsdKa2xjDP7INzPypp6Ic9kPXwaWAQ5gHRHnxJiO3otpUo64LaPPi",
+						"type": "text"
+					},
+					{
+						"key": "content-language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<root>\n   <payment_method>phone</payment_method>\n   <phone_number>011451574551</phone_number>\n</root>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Mostafa_Elgebaly_Payment_API/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Mostafa_Elgebaly_Payment_API",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
